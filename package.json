@@ -1,0 +1,14 @@
+{
+  "name": "farewill-test-solution",
+  "private": true,
+  "version": "0.0.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "chai": "^4.2.0"
+  }
+}
