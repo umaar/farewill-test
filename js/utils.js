@@ -43,9 +43,7 @@ function listPrefix(index) {
 
 		let letter = map[index];
 
-		if (letter) {
-
-		} else {
+		if (!letter) {
 		    // Provides the letter for the rightmost character
 		    letter = String.fromCharCode(startingCharCode + (index % alphabetCount));
 		    map[index] = letter;

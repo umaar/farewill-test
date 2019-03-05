@@ -14,13 +14,13 @@ function formatNames(beneficiaries) {
 		const id = name + identifier;
 
 		if (map.has(id)) {
-			return map.get(id)
+			return map.get(id);
 		}
 
 		const capitalisedNames = capitaliseWords(name);
 		const str = `${capitalisedNames} ${strings.of} ${identifier}`;
 
-		map.set(id, str)
+		map.set(id, str);
 		return str;
 	}).join(` ${strings.and} `);
 
