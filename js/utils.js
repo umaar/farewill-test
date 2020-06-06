@@ -36,22 +36,22 @@ function listPrefix(index) {
 		A recursive solution to generate character sequences
 		according to the specified index, e.g. 'a', 'b', 'c', 'aa', 'ab'
 	*/
-	function generate(index, str = '') {
-	    if (index < 0) {
-			return str.slice(1);
+	function generate(index, string = '') {
+		if (index < 0) {
+			return string.slice(1);
 		}
 
 		let letter = map[index];
 
 		if (!letter) {
-		    // Provides the letter for the rightmost character
-		    letter = String.fromCharCode(startingCharCode + (index % alphabetCount));
-		    map[index] = letter;
+			// Provides the letter for the rightmost character
+			letter = String.fromCharCode(startingCharCode + (index % alphabetCount));
+			map[index] = letter;
 		}
 
-	    index = Math.floor(index / alphabetCount) - 1;
+		index = Math.floor(index / alphabetCount) - 1;
 
-	    return generate(index, ('.' + letter) + str);
+		return generate(index, ('.' + letter) + string);
 	}
 
 	return generate(index);

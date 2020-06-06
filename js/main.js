@@ -10,7 +10,7 @@ const {capitaliseWords, listPrefix} = require('./utils');
 const map = new Map();
 
 function formatNames(beneficiaries) {
-	const res = beneficiaries.map(({name, identifier}) => {
+	const result = beneficiaries.map(({name, identifier}) => {
 		const id = name + identifier;
 
 		if (map.has(id)) {
@@ -18,13 +18,13 @@ function formatNames(beneficiaries) {
 		}
 
 		const capitalisedNames = capitaliseWords(name);
-		const str = `${capitalisedNames} ${strings.of} ${identifier}`;
+		const string = `${capitalisedNames} ${strings.of} ${identifier}`;
 
-		map.set(id, str);
-		return str;
+		map.set(id, string);
+		return string;
 	}).join(` ${strings.and} `);
 
-	return res;
+	return result;
 }
 
 /*
@@ -41,7 +41,7 @@ function getGiftsText(gifts) {
 }
 
 const specificGifts = (startIndex = 0, giftsArray = []) => {
-	if (!giftsArray.length) {
+	if (giftsArray.length === 0) {
 		return [];
 	}
 

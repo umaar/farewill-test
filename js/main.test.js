@@ -163,7 +163,7 @@ describe('Many gifts', () => {
   */
 
 	const index = 1;
-	const manyGifts = [...new Array(100001)].map((el, index) => {
+	const manyGifts = [...new Array(100001)].map((element, index) => {
 		return {
 			name: 'gift_' + index,
 			beneficiaries: [{
