@@ -5,12 +5,12 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
-    "mocha": "^7.1.1",
+    "mocha": "^7.2.0",
     "chai": "^4.2.0"
   },
   "devDependencies": {
     "@umaar/personal-eslint-config": "^1.0.2",
-    "xo": "^0.29.1"
+    "xo": "^0.32.0"
   },
   "xo": {
     "extends": "./node_modules/@umaar/personal-eslint-config/rules.json"
