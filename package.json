@@ -4,13 +4,12 @@
   "version": "0.0.1",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
-    "mocha": "^7.2.0",
-    "chai": "^4.2.0"
+    "chai": "^4.3.10",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0"
   },
   "devDependencies": {
-    "@umaar/personal-eslint-config": "^1.0.2",
-    "xo": "^0.32.0"
+    "@umaar/personal-eslint-config": "^1.0.5"
   },
   "xo": {
     "extends": "./node_modules/@umaar/personal-eslint-config/rules.json"

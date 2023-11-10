@@ -4,11 +4,11 @@
 install:
 	npm install
 
+install-ci:
+	npm ci
+
 update-deps:
 	ncu -u
 
-start:
-	node server.js
-
 test:
-	./node_modules/.bin/xo
+	node server.js
