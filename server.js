@@ -37,6 +37,7 @@ javascriptFilesInTestDirectory.forEach(file => {
 
 mocha.run(failures => {
 	if (failures) {
+		console.error("There were failures in the tests");
 		console.error(failures);
 		process.exit(1); // exit with non-zero status if there were failures
 	}
